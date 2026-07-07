@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. VARIABLES CSS (Colores y Fuentes)
-   ========================================================================== */
+
 :root {
     --primary-color: #007bff;
     --dark-color: #1a1a2e;
@@ -10,9 +8,6 @@
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ==========================================================================
-   2. ESTILOS GENERALES
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -29,22 +24,18 @@ body {
     min-height: 100vh;
 }
 
-/* ==========================================================================
-   3. HEADER Y NAVBAR (Uso de Flexbox)
-   ========================================================================== */
 .main-header {
     background-color: var(--dark-color);
     color: var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%; /* Padding para dar espacio interno */
+    padding: 20px 10%; 
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Selector por ID */
 #site-logo h1 {
     font-size: 1.8rem;
 }
@@ -56,7 +47,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 25px; /* Espaciado moderno entre elementos */
+    gap: 25px; 
 }
 
 .nav-links a {
@@ -71,9 +62,6 @@ body {
     color: var(--primary-color);
 }
 
-/* ==========================================================================
-   4. MAIN CONTENT (Sección Hero centrada con Flexbox)
-   ========================================================================== */
 .main-content {
     flex: 1;
     display: flex;
@@ -82,13 +70,12 @@ body {
     padding: 40px 20px;
 }
 
-/* Selector por ID y Clase combinados */
 #home-hero.hero-section {
     background-color: var(--white-color);
     max-width: 800px;
     text-align: center;
-    padding: 50px 40px; /* Padding interno */
-    margin: 20px auto;  /* Margin externo */
+    padding: 50px 40px; 
+    margin: 20px auto;  
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
@@ -96,13 +83,13 @@ body {
 .hero-section h2 {
     font-size: 2.5rem;
     color: var(--dark-color);
-    margin-bottom: 20px; /* Separación con el párrafo */
+    margin-bottom: 20px; 
 }
 
 .hero-section p {
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 30px; /* Separación con el botón */
+    margin-bottom: 30px; 
 }
 
 .btn-primary {
@@ -120,14 +107,11 @@ body {
     background-color: #0056b3;
 }
 
-/* ==========================================================================
-   5. FOOTER
-   ========================================================================== */
 .main-footer {
     background-color: var(--dark-color);
     color: #aaaaaa;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    margin-top: auto; /* Empuja el footer al fondo */
+    margin-top: auto; 
 }
