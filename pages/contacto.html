@@ -8,28 +8,95 @@
 </head>
 <body>
 
+    
+
     <header class="main-header">
-        <div class="logo-container" id="site-logo">
-    <h1><a href="../index.html" style="text-decoration: none; color: inherit;">TechZone<span>Zone</span></a></h1>
-</div>
-    </header>
-
     <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Tienda</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+        <div class="logo-container" id="site-logo">
+            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">TechZone<span>Zone</span></a></h1>
+        </div>
 
-    <main>
-        <section>
-            <h2>Contáctanos</h2>
-            <p>Contenido preliminar: Formulario de contacto, dirección de la tienda y redes sociales.</p>
-        </section>
-    </main>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html" class="active">Tienda</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="contacto-main">
+    <section class="contacto-container">
+        
+        <div class="contacto-formulario-box">
+            <h3>Envíanos un mensaje</h3>
+            <p>¿Tienes dudas sobre compatibilidad o necesitas una cotización personalizada? Escríbenos.</p>
+            
+            <form class="form-contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombres y Apellidos *</label>
+                    <input type="text" id="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" required placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto">
+                        <option value="cotizacion">Cotización de Computadora</option>
+                        <option value="soporte">Soporte Técnico / Garantía</option>
+                        <option value="ventas">Duda sobre un Producto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" rows="5" required placeholder="Escribe aquí tu consulta detallada..."></textarea>
+                </div>
+                <button type="submit" class="btn-enviar-contacto">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="contacto-info-box">
+            <h3>Información de Contacto</h3>
+            <p class="contacto-intro">Visítanos en nuestras oficinas o comunícate directamente con nuestros asesores.</p>
+            
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                    <h4>Dirección</h4>
+                    <p>Av. Garcilaso de la Vega 1250, Tienda 302 (C.C. CyberPlaza), Lima, Perú</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                    <h4>Teléfonos / WhatsApp</h4>
+                    <p>+51 987 654 321 / (01) 425-xxxx</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <div>
+                    <h4>Correo Corporativo</h4>
+                    <p>ventas@techzone.pe</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span class="info-icon">⏰</span>
+                <div>
+                    <h4>Horario de Atención</h4>
+                    <p>Lunes a Sábado: 9:00 AM - 8:00 PM<br>Domingos: Cerrado</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2026 TechZone - Todos los derechos reservados.</p>

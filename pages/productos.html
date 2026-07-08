@@ -9,27 +9,148 @@
 <body>
 
     <header class="main-header">
-        <div class="logo-container" id="site-logo">
-    <h1><a href="../index.html" style="text-decoration: none; color: inherit;">TechZone<span>Zone</span></a></h1>
-</div>
-    </header>
-
     <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Tienda</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+        <div class="logo-container" id="site-logo">
+            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">TechZone<span>Zone</span></a></h1>
+        </div>
 
-    <main>
-        <section>
-            <h2>Nuestros Productos Tecnológicos</h2>
-            <p>Contenido preliminar: Aquí se mostrará el catálogo de laptops, componentes y periféricos.</p>
-        </section>
-    </main>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html" class="active">Tienda</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="tienda-main">
+    <section class="tienda-header">
+        <h2>Nuestro Catálogo Tecnológico</h2>
+        <p>Equipos de alta gama seleccionados para maximizar tu rendimiento técnico y gaming.</p>
+    </section>
+
+    <section class="tienda-filtros">
+        <button class="filtro-btn active">Todos</button>
+        <button class="filtro-btn">Laptops</button>
+        <button class="filtro-btn">Hardware</button>
+        <button class="filtro-btn">Periféricos</button>
+    </section>
+
+    <section class="productos-catalogo">
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="badge-offer">OFERTA</span>
+                    <img src="../assets/prod-laptop.jpg" alt="Laptop ASUS ROG" class="product-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Laptops</span>
+                    <h4 class="product-title">Laptop Gamer ASUS ROG Strix</h4>
+                    <p class="product-description">Intel i7, 16GB RAM, RTX 4060. Potencia sin límites.</p>
+                    <div class="product-footer">
+                        <div class="product-price-box">
+                            <span class="price-current">S/. 4,599</span>
+                            <span class="price-old">S/. 5,299</span>
+                        </div>
+                        <a href="#" class="btn-add">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="badge-new">NUEVO</span>
+                    <img src="../assets/prod-mouse.jpg" alt="Mouse Logitech G Pro" class="product-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Periféricos</span>
+                    <h4 class="product-title">Mouse Logitech G Pro X Superlight</h4>
+                    <p class="product-description">Inalámbrico, sensor HERO 25K, ultra liviano para esports.</p>
+                    <div class="product-footer">
+                        <div class="product-price-box">
+                            <span class="price-current">S/. 499</span>
+                        </div>
+                        <a href="#" class="btn-add">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="../assets/prod-teclado.jpg" alt="Teclado Corsair K70" class="product-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Periféricos</span>
+                    <h4 class="product-title">Teclado Mecánico Corsair K70 RGB</h4>
+                    <p class="product-description">Switches Cherry MX Red, estructura resistente de aluminio.</p>
+                    <div class="product-footer">
+                        <div class="product-price-box">
+                            <span class="price-current">S/. 620</span>
+                        </div>
+                        <a href="#" class="btn-add">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="../assets/prod-cpu.jpg" alt="Procesador AMD Ryzen 7" class="product-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Hardware</span>
+                    <h4 class="product-title">Procesador AMD Ryzen 7 7800X3D</h4>
+                    <p class="product-description">El mejor procesador del mercado para gaming de nueva generación.</p>
+                    <div class="product-footer">
+                        <div class="product-price-box">
+                            <span class="price-current">S/. 1,850</span>
+                        </div>
+                        <a href="#" class="btn-add">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="badge-offer">OFERTA</span>
+                    <img src="../assets/prod-gpu.jpg" alt="Tarjeta de video RTX 4070" class="product-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Hardware</span>
+                    <h4 class="product-title">NVIDIA GeForce RTX 4070 Ti Super</h4>
+                    <p class="product-description">16GB VRAM GDDR6X, trazado de rayos y DLSS 3.0 definitivo.</p>
+                    <div class="product-footer">
+                        <div class="product-price-box">
+                            <span class="price-current">S/. 3,999</span>
+                            <span class="price-old">S/. 4,400</span>
+                        </div>
+                        <a href="#" class="btn-add">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <span class="badge-new">NUEVO</span>
+                    <img src="../assets/prod-monitor.jpg" alt="Monitor ASUS ROG" class="product-img">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Laptops</span>
+                    <h4 class="product-title">Monitor ASUS ROG Swift 27" QHD</h4>
+                    <p class="product-description">Panel Fast IPS, 240Hz de tasa de refresco, 1ms de respuesta.</p>
+                    <div class="product-footer">
+                        <div class="product-price-box">
+                            <span class="price-current">S/. 2,150</span>
+                        </div>
+                        <a href="#" class="btn-add">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2026 TechZone - Todos los derechos reservados.</p>

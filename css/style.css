@@ -23,42 +23,70 @@ body {
     min-height: 100vh;
 }
 
+/* ==========================================
+   CABECERA GLOBAL (IDÉNTICA A LA CAPTURA)
+   ========================================== */
+
 .main-header {
-    background-color: var(--dark-color);
-    color: var(--white-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%; 
-    position: sticky;
-    top: 0;
+    background-color: #161624; /* Color oscuro idéntico de tu barra */
+    width: 100%;
+    position: relative;
     z-index: 1000;
+    /* La sombra blanca/clara que se ve abajo de la barra en tu foto */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 1px 0px rgba(255, 255, 255, 0.1); 
 }
 
-#site-logo h1 {
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izquierda y los links a la derecha */
+    align-items: center;            /* Los centra perfectamente de forma vertical */
+    max-width: 1200px;              /* Limita el ancho para que no se pegue a los extremos de pantallas gigantes */
+    margin: 0 auto;                 /* Centra la barra en la pantalla */
+    padding: 20px 40px;             /* Espaciado interno exacto para darle esa altura elegante */
+}
+
+/* Alineación interna del Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1 {
+    font-family: var(--font-main);
     font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin: 0;
+    letter-spacing: -0.5px;
 }
 
-#site-logo span {
+.logo-container span {
     color: var(--primary-color);
 }
 
+/* Alineación interna de los Enlaces a la derecha */
 .nav-links {
-    display: flex;
     list-style: none;
-    gap: 25px; 
+    display: flex;
+    gap: 30px; /* Distancia perfecta entre cada palabra */
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .nav-links a {
-    color: var(--white-color);
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: #ffffff;
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
 }
 
+/* Color azul para la sección activa o cuando pasas el mouse */
 .nav-links a:hover, 
 .nav-links a.active {
-    color: var(--primary-color);
+    color: #007bff; /* El tono azul exacto de tu Tienda activa */
 }
 
 .main-content {
@@ -123,15 +151,16 @@ body {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(15, 15, 26, 0.95) 100%), 
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(15, 15, 26, 0.9) 100%), 
                 url('../assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white-color);
-    padding: 90px 20px;
+    padding: 120px 20px; /* Aumentamos el padding para darle cuerpo y presencia al banner */
     text-align: center;
 }
+
 .hero-container {
     max-width: 800px;
     margin: 0 auto;
@@ -500,4 +529,134 @@ body {
 
 .product-card:hover .product-img {
     transform: scale(1.05);
+}
+
+/* ==========================================
+   ESTILOS DE LA PÁGINA DE TIENDA
+   ========================================== */
+.tienda-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.tienda-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tienda-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+.tienda-header p {
+    color: #718096;
+}
+.tienda-filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.filtro-btn {
+    background: var(--white-color);
+    border: 1px solid #e2e8f0;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4a5568;
+    transition: all 0.3s;
+}
+.filtro-btn.active, .filtro-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* ==========================================
+   ESTILOS DE LA PÁGINA DE CONTACTO
+   ========================================== */
+.contacto-main {
+    background: #f7fafc;
+    padding: 60px 20px;
+}
+.contacto-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+.contacto-formulario-box, .contacto-info-box {
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+.contacto-formulario-box h3, .contacto-info-box h3 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+.contacto-formulario-box p, .contacto-intro {
+    color: #718096;
+    margin-bottom: 25px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--dark-color);
+    font-size: 0.9rem;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+.btn-enviar-contacto {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.info-icon {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+.info-item h4 {
+    margin: 0 0 5px 0;
+    color: var(--dark-color);
+}
+.info-item p {
+    margin: 0;
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+/* Empuja el contenido principal hacia abajo uniformemente en todas las páginas */
+.home-main, .tienda-main, .contacto-main {
+    margin-top: 75px; /* Esta es la altura exacta que ocupa la barra fija */
 }
