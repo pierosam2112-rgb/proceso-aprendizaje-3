@@ -24,25 +24,25 @@ body {
 }
 
 /* ==========================================
-   CABECERA GLOBAL (IDÉNTICA A LA CAPTURA)
+   CABECERA GLOBAL (IDÉNTICA EN TODAS LAS PÁGINAS)
    ========================================== */
 
 .main-header {
-    background-color: #161624; /* Color oscuro idéntico de tu barra */
+    background-color: #161624; 
     width: 100%;
     position: relative;
     z-index: 1000;
-    /* La sombra blanca/clara que se ve abajo de la barra en tu foto */
+    
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 1px 0px rgba(255, 255, 255, 0.1); 
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Empuja el logo a la izquierda y los links a la derecha */
-    align-items: center;            /* Los centra perfectamente de forma vertical */
-    max-width: 1200px;              /* Limita el ancho para que no se pegue a los extremos de pantallas gigantes */
-    margin: 0 auto;                 /* Centra la barra en la pantalla */
-    padding: 20px 40px;             /* Espaciado interno exacto para darle esa altura elegante */
+    justify-content: space-between; 
+    align-items: center;            
+    max-width: 1200px;              
+    margin: 0 auto;                 
+    padding: 20px 40px;             
 }
 
 /* Alineación interna del Logo */
@@ -68,7 +68,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px; /* Distancia perfecta entre cada palabra */
+    gap: 30px; 
     margin: 0;
     padding: 0;
     align-items: center;
@@ -86,7 +86,7 @@ body {
 /* Color azul para la sección activa o cuando pasas el mouse */
 .nav-links a:hover, 
 .nav-links a.active {
-    color: #007bff; /* El tono azul exacto de tu Tienda activa */
+    color: #007bff; 
 }
 
 .main-content {
@@ -157,7 +157,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white-color);
-    padding: 120px 20px; /* Aumentamos el padding para darle cuerpo y presencia al banner */
+    padding: 120px 20px; 
     text-align: center;
 }
 
@@ -573,7 +573,7 @@ body {
     border-color: var(--primary-color);
 }
 
-/* ==========================================
+/* ========================================== 
    ESTILOS DE LA PÁGINA DE CONTACTO
    ========================================== */
 .contacto-main {
@@ -656,7 +656,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* Empuja el contenido principal hacia abajo uniformemente en todas las páginas */
+
 .home-main, .tienda-main, .contacto-main {
-    margin-top: 75px; /* Esta es la altura exacta que ocupa la barra fija */
+    margin-top: 75px; 
 }
