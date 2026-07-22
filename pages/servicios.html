@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - TechZone</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (Iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS (Animaciones) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo-container" id="site-logo">
+                <h1><a href="../index.html" style="text-decoration: none; color: inherit;">TechZone<span>Zone</span></a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Tienda</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto-main">
+        <!-- BANNER DE ENCABEZADO -->
+        <section class="hero-section" style="padding: 60px 20px; text-align: center;">
+            <h2 data-aos="fade-down">Nuestros Servicios Especializados</h2>
+            <p data-aos="fade-up">Ofrecemos soluciones integrales en hardware, ensamblaje y soporte técnico especializado.</p>
+        </section>
+
+        <!-- GRID DE SERVICIOS -->
+        <section class="servicios-container" style="max-width: 1200px; margin: 50px auto; padding: 0 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                
+                <!-- Servicio 1 -->
+                <div style="background: #ffffff; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-screwdriver-wrench" style="font-size: 2.5rem; color: #007bff; margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px; color: #161624;">Ensamblaje Custom</h3>
+                    <p style="color: #666; line-height: 1.6;">Montaje profesional de PC Gamer y Workstations con gestión avanzada de cables y pruebas de rendimiento.</p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div style="background: #ffffff; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-microchip" style="font-size: 2.5rem; color: #007bff; margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px; color: #161624;">Mantenimiento Preventivo</h3>
+                    <p style="color: #666; line-height: 1.6;">Limpieza profunda, cambio de pasta térmica de alta conductividad y optimización de flujo de aire.</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div style="background: #ffffff; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-laptop-medical" style="font-size: 2.5rem; color: #007bff; margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px; color: #161624;">Diagnóstico y Reparación</h3>
+                    <p style="color: #666; line-height: 1.6;">Detección precisa de fallas en componentes, actualización de BIOS y reparación de hardware.</p>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div style="background: #ffffff; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-headset" style="font-size: 2.5rem; color: #007bff; margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px; color: #161624;">Asesoría Personalizada</h3>
+                    <p style="color: #666; line-height: 1.6;">Te orientamos en la selección óptima de piezas según tu presupuesto y necesidades técnicas.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background: #161624; color: #ffffff; text-align: center; padding: 25px 20px; margin-top: 60px;">
+        <p>&copy; 2026 TechZone. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT DE ANIMACIONES AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
